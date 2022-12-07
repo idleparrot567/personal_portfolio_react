@@ -20,6 +20,10 @@ function App() {
     <div className="App">
      <Navbar>nav bar </Navbar>
      <Header>header </Header>
+
+     
+
+
      {/*<canvas id='myThreeJsCanvas'/>*/}
      <Main></Main> 
 
