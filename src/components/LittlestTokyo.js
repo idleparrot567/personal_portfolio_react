@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
-import SceneInit from '/Users/lixiaodan/Desktop/personal_portfolio_react/src/lib/SceneInit.js';
+import SceneInit from './SceneInit.js';
 
 export default function LittlestTokyo() {
     let mixer;
