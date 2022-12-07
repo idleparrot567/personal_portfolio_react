@@ -1,9 +1,4 @@
 /* Add styling for your page here */
-
-.App {
-
-}
-
-.BakeryItem {
-  
+body {
+    background-color: #102E4A;
 }

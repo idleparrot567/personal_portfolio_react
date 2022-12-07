@@ -1,0 +1,8 @@
+Model Information:
+* title:	Littlest Tokyo
+* source:	https://sketchfab.com/3d-models/littlest-tokyo-94b24a60dc1b48248de50bf087c0f042
+* author:	glenatron (https://sketchfab.com/glenatron)
+
+Model License:
+* license type:	SKETCHFAB Editorial (https://sketchfab.com/licenses)
+* requirements:	Use only in connection with events that are newsworthy or of public interest
