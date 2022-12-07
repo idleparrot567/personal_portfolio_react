@@ -14,14 +14,16 @@ bakeryData.forEach((item) => {
 function App() {
   // TODO: use useState to create a state variable to hold the state of the cart
   /* add your cart state code here */
+ 
 
   return (
     <div className="App">
      <Navbar>nav bar </Navbar>
      <Header>header </Header>
+     {/*<canvas id='myThreeJsCanvas'/>*/}
      <Main></Main> 
+
      hello world
-     <canvas id='myThreeJsCanvas'/>
     </div>
   );
 }
