@@ -29,7 +29,7 @@ export default function LittlestTokyo() {
         gltfLoader.load(process.env.PUBLIC_URL + '/scene.gltf', (gltfScene) => {
             const model = gltfScene.scene;
             model.position.set( 0, 1, 0 );
-			model.scale.set( 0.01, 0.01, 0.01 );
+			model.scale.set( 0.01, 0.01, 0.01);
             test.scene.add(gltfScene.scene);
             //mixer
             mixer = new THREE.AnimationMixer(gltfScene.scene);

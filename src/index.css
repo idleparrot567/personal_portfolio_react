@@ -8,9 +8,17 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
 
+  #model{
+    margin: 1em;
+    padding: 1em;
+
+  }
+
   #gohere{
     width: 50%;
     height: 50%;
+    margin: 1em;
+    padding: 1em;
     position: static; /* fixed or static */
     top: 100px;
     left: 100px;

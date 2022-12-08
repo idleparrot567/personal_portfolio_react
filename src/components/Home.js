@@ -6,7 +6,7 @@ import Model from "./Model"
 const Home = () => {
     return (
       <div>
-     <div>
+     <div id="model">
       <Container maxWidth="md">
       <div id='goHere'>
         <Model></Model>
