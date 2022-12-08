@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import {chakra, shouldForwardProp} from '@chakra-ui/react'
 
 
-export default function Work({children, delay=0}) {
+export default function Section({children, delay=0}) {
   const StyledDiv = chakra(motion.div, {
     shouldForwardProp: prop => {
       return shouldForwardProp(prop) || prop === 'transition'

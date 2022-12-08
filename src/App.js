@@ -5,10 +5,6 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
 import {Routes, Route} from 'react-router'
-import Main from "./components/Main"
-import Container from '@mui/material/Container'
-import Model from "./components/Model"
-
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
 bakeryData.forEach((item) => {
@@ -27,13 +23,6 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="Projects" element={<Projects/>}/>
         </Routes>
-
-        {/* <div>
-      <Model></Model>
-      <Container maxWidth="sm">
-      <Main></Main> 
-      </Container>
-      </div> */}
     </div>
   );
 }

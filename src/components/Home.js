@@ -6,11 +6,23 @@ import Model from "./Model"
 const Home = () => {
     return (
       <div>
-      <Model></Model>
-      <Container maxWidth="sm">
-      <Main></Main> 
+     <div>
+      <Container maxWidth="md">
+      <div id='goHere'>
+        <Model></Model>
+      </div>  
       </Container>
       </div>
+       <div>
+       <Container maxWidth="sm">
+       <Main></Main> 
+         </Container> 
+     </div>
+
+      </div>
+
+
+    
     );
   };
     

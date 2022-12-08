@@ -1,5 +1,5 @@
 import React from 'react';
-import Work from './Work';
+import Work from './Section';
 import Box from '@mui/material/Box';
 import About from './About';
 import Container from '@mui/material/Container';

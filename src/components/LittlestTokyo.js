@@ -9,14 +9,18 @@ import { MapControls } from 'three/examples/jsm/controls/OrbitControls';
 export default function LittlestTokyo() {
     let mixer;
     const refContainer = useRef();
-    
-
     useEffect(() => {
-        const test = new SceneInit('myThreeJsCanvas');
+        const test = new SceneInit('canvas'); //'myThreeJsCanvas'
         test.initialize();
         test.animate();
-        //load model
+        //container
+        const {current: container} = refContainer
+        if(container){
+            const scW = container.clientWidth
+            const scH = container.clientHeight
+        }
 
+        //load model
         const dracoLoader = new DRACOLoader();
 		dracoLoader.setDecoderPath( 'js/libs/draco/gltf/' );
         
@@ -27,7 +31,6 @@ export default function LittlestTokyo() {
             model.position.set( 0, 1, 0 );
 			model.scale.set( 0.01, 0.01, 0.01 );
             test.scene.add(gltfScene.scene);
-
             //mixer
             mixer = new THREE.AnimationMixer(gltfScene.scene);
             mixer.clipAction(gltfScene.animations[0]).play();

@@ -1,14 +1,19 @@
 import React from 'react'
 import {
+  Link,
   Container, 
+  Button,
   Box, 
   Heading, 
   Text, 
   Image, 
   useColorModeValue,
-  Link
 } from '@chakra-ui/react'
-import Work from './Work.js'
+import {ChevronRightIcon} from '@chakra-ui/icons'
+import Section from './Section.js'
+import Paragraph from './Paragraph.js'
+import { BioSection, BioYear } from './Bio.js';
+import {BrowserRouter as Router, NavLink as RouterLink} from 'react-router-dom';
 
 export default function About() {
   return (
@@ -22,6 +27,7 @@ export default function About() {
           align='center'>
             <Text color='white'>Hello, I&apos;m a CS and Medieval Studies Undergrad @ Brown. </Text>
           </Box>
+          <Section delay={0.1}>
           <Box display={{md:'flex'}}>
             <Box flexGrow={1}>
               <Heading as='h2' variant='page-title' color='white'>
@@ -39,12 +45,45 @@ export default function About() {
               <Image borderColor='white' borderWidth={2} borderStyle="solid" maxWidth="100px" display="inline-block" borderRadius="100%" src='/IMG_2017.jpg' alt="Profile Image"/> 
             </Box>
           </Box>
-          <Work delay={0.1}>
+          </Section> 
+          
+          {/* here starts the work section */}
+          <Section delay={0.2}>
           <Heading as='h3' variant='underline' color="white">
             Work
           </Heading>
-          <Text color='white'> Paragraph </Text>
-          </Work>
+          <Paragraph> RosettaStone is a junior undergrad @ Brown studying CS (AI/ML and Data tracks) and Medieval 
+            Studies (Late Antiquity Track). 
+          </Paragraph>
+          <Box align="center" my={4}>
+            <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal"> 
+            <Link as={RouterLink} to='/Projects' color="black"> My Works </Link>
+            </Button>
+          </Box>
+          </Section>
+
+           {/* here starts the Bio section */}
+           <Section delay={0.3}>
+             <Heading as="h3" variant="setcion-title" color="white"> 
+             Bio
+             </Heading>
+             <BioSection>
+              <BioYear> 2017 to 2020 </BioYear>
+               Studying @ Tabor Academy, Marion, MA, USA. 
+             </BioSection>
+             <BioSection>
+               <BioYear> 2020 to present </BioYear>
+               Studying @ Brown University, Providence, RI, USA.
+             </BioSection>
+           </Section>
+            {/*Here starts the interest section  */}
+          <Section delay={0.5}>
+          <Heading as='h3' variant='underline' color="white">
+            Interests
+          </Heading>
+          <Paragraph> Classical Violin, Late Antiquity Greek/ Latin, Medieval Art History.
+          </Paragraph>
+          </Section>
         </Container>
     </div> 
   );
