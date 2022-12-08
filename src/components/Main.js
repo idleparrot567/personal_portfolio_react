@@ -1,12 +1,14 @@
-import React from 'react'
-import Project from './Project'
+import React from 'react';
+import Project from './Project';
 import Box from '@mui/material/Box';
+import About from './About';
 import Container from '@mui/material/Container';
 
 export default function Main() {
   return (
-    <div>Main, here you implement your introduction and project
-        <Project>For each project, you will have a card</Project>
+    <div>
+        <About> </About>
+        <Project> </Project>
     </div>
   )
 }

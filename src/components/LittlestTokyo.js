@@ -19,7 +19,7 @@ export default function LittlestTokyo() {
         
         const gltfLoader = new GLTFLoader();
         gltfLoader.setDRACOLoader( dracoLoader );
-        gltfLoader.load('/scene.gltf', (gltfScene) => {
+        gltfLoader.load(process.env.PUBLIC_URL + '/scene.gltf', (gltfScene) => {
             const model = gltfScene.scene;
             model.position.set( 0, 1, 0 );
 			model.scale.set( 0.01, 0.01, 0.01 );

@@ -37,10 +37,11 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="static" style={{ background: '#2E3B55' }}>
+    //#2E3B55 #AED1E6
+    <AppBar position="static" style={{ background: '#2E3B55'}}>
     <Container maxWidth="xl">
       <Toolbar disableGutters>
-        <CastleIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        {/*<CastleIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />*/}
         <Typography
           variant="h6"
           noWrap
@@ -56,7 +57,7 @@ export default function Navbar() {
             textDecoration: 'none',
           }}
         >
-         RosellaStone
+         RosettaStone
         </Typography>
 
         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -95,7 +96,7 @@ export default function Navbar() {
             ))}
           </Menu>
         </Box>
-        <CastleIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+        {/*<CastleIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />*/}
         <Typography
           variant="h5"
           noWrap
@@ -112,7 +113,7 @@ export default function Navbar() {
             textDecoration: 'none',
           }}
         >
-          RosellaStone
+          RosettaStone
         </Typography>
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
           {pages.map((page) => (
