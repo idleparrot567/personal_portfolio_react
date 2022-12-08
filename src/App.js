@@ -5,6 +5,11 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Header from "./components/Header";
 
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Container';
+import Model from "./components/Model";
+
+
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
 bakeryData.forEach((item) => {
   item.image = process.env.PUBLIC_URL + "/" + item.image;
@@ -17,10 +22,17 @@ function App() {
  
   return (
     <div className="App">
-     <Navbar>nav bar </Navbar>
-     <Header>header </Header>
-     {/*<canvas id='myThreeJsCanvas'/>*/}
-     <Main></Main> 
+    <Navbar>nav bar </Navbar>
+      <Model></Model>
+      <Container>
+      <Box>
+      fugyugyug
+      <Main></Main> 
+      jijoijojoijj
+      </Box>
+      </Container>
+     
+  
     </div>
   );
 }

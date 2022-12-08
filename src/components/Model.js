@@ -4,8 +4,9 @@ import LittlestTokyo from './LittlestTokyo'
 
 export default function Model() {
   return (
-    <div>
-        /*<LittlestTokyo>Little Tokyo</LittlestTokyo>*/
+    <div id='test'>
+       <canvas id='myThreeJsCanvas'/>
+        <LittlestTokyo>Little Tokyo</LittlestTokyo>
     </div>
   )
 }

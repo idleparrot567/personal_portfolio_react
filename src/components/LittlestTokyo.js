@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
@@ -8,6 +8,9 @@ import { MapControls } from 'three/examples/jsm/controls/OrbitControls';
 
 export default function LittlestTokyo() {
     let mixer;
+    const refContainer = useRef();
+    
+
     useEffect(() => {
         const test = new SceneInit('myThreeJsCanvas');
         test.initialize();

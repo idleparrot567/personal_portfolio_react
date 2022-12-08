@@ -48,7 +48,10 @@ export default class SceneInit {
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.outputEncoding = THREE.sRGBEncoding;
     // this.renderer.shadowMap.enabled = true;
-    document.body.appendChild(this.renderer.domElement);
+    const div = document.getElementById('test');
+    console.log(div);
+    console.log(document.querySelector('#test'));
+    div.appendChild(this.renderer.domElement);
 
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
     this.scene.environment = pmremGenerator.fromScene( new RoomEnvironment(), 0.04 ).texture;
@@ -61,12 +64,10 @@ export default class SceneInit {
 		this.controls.enableDamping = true;
 
     this.stats = Stats();
-    document.body.appendChild(this.stats.dom);
+    div.appendChild(this.stats.dom);
 
     // if window resizes
     window.addEventListener('resize', () => this.onWindowResize(), false);
-
-    //controls
 
   }
 
@@ -86,6 +87,7 @@ export default class SceneInit {
   }
 
   onWindowResize() {
+    console.log("clientwidth",this.canvas.clientWidth);
     //this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.aspect = this.canvas.clientWidth / this.canvas.clientHeight;
     this.camera.updateProjectionMatrix();
