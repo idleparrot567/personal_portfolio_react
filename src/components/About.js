@@ -1,7 +1,14 @@
 import React from 'react'
-import {Container, Box, Heading, Text, Image, useColorModeValue} from '@chakra-ui/react'
-
-
+import {
+  Container, 
+  Box, 
+  Heading, 
+  Text, 
+  Image, 
+  useColorModeValue,
+  Link
+} from '@chakra-ui/react'
+import Work from './Work.js'
 
 export default function About() {
   return (
@@ -31,8 +38,13 @@ export default function About() {
             align='center'>
               <Image borderColor='white' borderWidth={2} borderStyle="solid" maxWidth="100px" display="inline-block" borderRadius="100%" src='/IMG_2017.jpg' alt="Profile Image"/> 
             </Box>
-
           </Box>
+          <Work delay={0.1}>
+          <Heading as='h3' variant='underline' color="white">
+            Work
+          </Heading>
+          <Text color='white'> Paragraph </Text>
+          </Work>
         </Container>
     </div> 
   );
