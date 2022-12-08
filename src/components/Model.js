@@ -6,10 +6,10 @@ import {Container} from '@chakra-ui/react'
 export default function Model() {
   return (
       <Container centerContent>
-        <div id='test'> 
+        {/* <div id='test'> 
         <canvas id='canvas'/>
         </div>
-        <LittlestTokyo>Little Tokyo</LittlestTokyo>
+        <LittlestTokyo>Little Tokyo</LittlestTokyo> */}
       </Container>
   )
 }
