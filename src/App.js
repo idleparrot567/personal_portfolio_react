@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar"
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
-import {Routes, Route} from 'react-router'
-import { ChakraProvider } from '@chakra-ui/react'
+// import {Routes, Route} from 'react-router'
+import {Routes, Route} from 'react-router';
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
 bakeryData.forEach((item) => {
