@@ -42,7 +42,8 @@ export default function About() {
             mt ={{base:4, md: 0}}
             ml={{md: 6}}
             align='center'>
-              <Image borderColor='white' borderWidth={2} borderStyle="solid" maxWidth="100px" display="inline-block" borderRadius="100%" src='/IMG_2017.jpg' alt="Profile Image"/> 
+              <Image borderColor='white' borderWidth={2} borderStyle="solid" maxWidth="100px" display="inline-block" borderRadius="100%" 
+              src={process.env.PUBLIC_URL +'/IMG_2017.jpg'} alt="Profile Image"/> 
             </Box>
           </Box>
           </Section> 
