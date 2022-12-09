@@ -56,6 +56,7 @@ export default class SceneInit {
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.target.set( 0, 0.5, 0 );
 		this.controls.update();
+    this.controls.enableZoom = false;
 		this.controls.enablePan = false;
 		this.controls.enableDamping = true;
 

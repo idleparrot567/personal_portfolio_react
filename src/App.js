@@ -19,13 +19,13 @@ function App() {
  
   return (
       <div clasname='APP'>
-        <ChakraProvider>
+        {/* <ChakraProvider> */}
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="Projects" element={<Projects/>}/>
         </Routes>
-        </ChakraProvider>
+        {/* </ChakraProvider> */}
     </div>
   );
 }
