@@ -2,7 +2,7 @@
   "name": "react-studio",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "./",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.13",
     "@chakra-ui/react": "^2.4.3",
