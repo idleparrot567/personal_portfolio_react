@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
 import {Routes, Route} from 'react-router'
+import { ChakraProvider } from '@chakra-ui/react'
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
 bakeryData.forEach((item) => {
@@ -18,11 +19,13 @@ function App() {
  
   return (
       <div clasname='APP'>
+        <ChakraProvider>
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="Projects" element={<Projects/>}/>
         </Routes>
+        </ChakraProvider>
     </div>
   );
 }
