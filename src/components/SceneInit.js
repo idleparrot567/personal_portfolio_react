@@ -44,7 +44,8 @@ export default class SceneInit {
     });
     //build the container here
     const container = document.getElementById('goHere');
-    this.renderer.setPixelRatio( window.devicePixelRatio);
+    this.renderer.setPixelRatio( container.devicePixelRatio);
+    console.log("container.weith", container.clientWidth)
     this.renderer.setSize(container.clientWidth, container.clientHeight);
     this.renderer.outputEncoding = THREE.sRGBEncoding;
 
@@ -61,7 +62,7 @@ export default class SceneInit {
 		this.controls.enableDamping = true;
 
     this.stats = Stats();
-    //container.appendChild(this.stats.dom);
+    container.appendChild(this.stats.dom);
 
     // if window resizes
     window.addEventListener('resize', () => this.onWindowResize(), false);
@@ -90,6 +91,6 @@ export default class SceneInit {
     //this.camera.aspect = window.innerWidth / window.innerHeight;
     //this.camera.aspect = this.canvas.clientWidth / this.canvas.clientHeight;
     this.camera.updateProjectionMatrix();
-    this.renderer.setSize(800, 800);
+    this.renderer.setSize(test.clientWidth , test.clientHeight);
   }
 }
