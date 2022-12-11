@@ -14,7 +14,7 @@ const Home = () => {
       </Container>
       </div>
        <div>
-       <Container maxW="2xl">
+       <Container maxW="md">
        <Main></Main> 
          </Container> 
      </div>
