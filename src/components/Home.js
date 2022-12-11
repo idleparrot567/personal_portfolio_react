@@ -1,7 +1,6 @@
 import React from 'react';
 import Main from "./Main"
 import {Container} from '@chakra-ui/react'
-// import Container from '@mui/material/Container'
 import Model from "./Model"
 
 const Home = () => {
