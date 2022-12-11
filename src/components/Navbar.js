@@ -58,7 +58,9 @@ export default function Navbar() {
             textDecoration: 'none',
           }}
         >
-         RosettaStone
+         <Link style={{textDecoration:'none', color:"white"}} to={`/`}>
+                  RosettaStone
+                  </Link>
         </Typography>
 
         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

@@ -18,7 +18,7 @@ import {BrowserRouter as Router, NavLink as RouterLink} from 'react-router-dom';
 export default function About() {
   return (
     <div>
-        <Container>
+        <Container maxW='container.sm'>
           <Box overflow='hidden' 
           borderRadius='6px' 
           bg={useColorModeValue('#85C7DE', '#C6DBF0')}
@@ -50,7 +50,7 @@ export default function About() {
           
           {/* here starts the work section */}
           <Section delay={0.2}>
-          <Heading as='h3' variant='underline' color="white">
+          <Heading as='h2' variant='underline' color="white">
             Work
           </Heading>
           <Paragraph> RosettaStone is a junior undergrad @ Brown studying CS (AI/ML and Data tracks) and Medieval 
@@ -65,7 +65,7 @@ export default function About() {
 
            {/* here starts the Bio section */}
            <Section delay={0.3}>
-             <Heading as="h3" variant="setcion-title" color="white"> 
+             <Heading as="h2" variant="setcion-title" color="white"> 
              Bio
              </Heading>
              <BioSection>

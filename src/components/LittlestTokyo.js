@@ -12,6 +12,7 @@ export default function LittlestTokyo() {
     useEffect(() => {
         const test = new SceneInit('canvas'); //'myThreeJsCanvas'
         test.initialize();
+        test.geometry.center();
         test.animate();
         //container
         const {current: container} = refContainer
