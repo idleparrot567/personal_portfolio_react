@@ -43,8 +43,8 @@ export default class SceneInit {
       canvas, antialias: true,
     });
     //build the container here
-    const container = document.getElementById('goHere');
-    this.renderer.setPixelRatio( container.devicePixelRatio);
+    const container = document.getElementById('test');
+    this.renderer.setPixelRatio( window.devicePixelRatio);
     console.log("container.weith", container.clientWidth)
     this.renderer.setSize(container.clientWidth, container.clientHeight);
     this.renderer.outputEncoding = THREE.sRGBEncoding;

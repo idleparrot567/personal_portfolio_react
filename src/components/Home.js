@@ -8,17 +8,15 @@ const Home = () => {
     return (
       <div>
      <div id="model">
-      <Container maxWidth="md" centerContent>
+      <Container maxWidth="sm" centerContent>
       <div id='goHere'>
         <Model></Model>
       </div>  
-      <Main></Main> 
       </Container>
       </div>
-
        <div>
-       <Container maxWidth="md" centerContent>
-      
+       <Container maxWidth="container.sm" centerContent>
+       <Main></Main> 
          </Container> 
      </div>
 
