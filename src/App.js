@@ -1,6 +1,5 @@
 import "./index.css";
 import bakeryData from "./assets/project-data.json";
-import Navbar from "./components/Navbar"
 import Nav from "./components/Nav"
 import Home from "./components/Home";
 import Projects from "./components/Projects";
