@@ -5,22 +5,22 @@ import Model from "./Model"
 
 const Home = () => {
     return (
-      <div>
+        
+         <div>
      <div id="model">
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
       <div id='goHere'>
         <Model></Model>
       </div>  
       </Container>
       </div>
        <div>
-       <Container maxW="md">
+       <Container maxWidth="sm">
        <Main></Main> 
          </Container> 
      </div>
 
       </div>
-
 
     
     );
