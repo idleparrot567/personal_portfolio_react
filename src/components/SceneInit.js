@@ -28,7 +28,7 @@ export default class SceneInit {
 
   initialize() {
     this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color(0x102E4A);
+    // this.scene.background = new THREE.Color(0xffffff);
     this.camera = new THREE.PerspectiveCamera(
       this.fov,
       window.innerWidth / window.innerHeight,
@@ -47,6 +47,7 @@ export default class SceneInit {
     this.renderer.setPixelRatio( window.devicePixelRatio);
     console.log("container.weith", container.clientWidth)
     this.renderer.setSize(container.clientWidth, container.clientHeight);
+    this.renderer.setClearColor( 0xffffff, 0);
     this.renderer.outputEncoding = THREE.sRGBEncoding;
 
 
