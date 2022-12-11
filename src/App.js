@@ -1,11 +1,15 @@
 import "./index.css";
 import bakeryData from "./assets/project-data.json";
 import Navbar from "./components/Navbar"
+import Nav from "./components/Nav"
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
 // import {Routes, Route} from 'react-router'
 import {Routes, Route} from 'react-router';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import theme from './components/Theme.js'
+
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
 bakeryData.forEach((item) => {
@@ -13,19 +17,22 @@ bakeryData.forEach((item) => {
 });
 /* ############################################################## */
 
+
+
+
 function App() {
   // TODO: use useState to create a state variable to hold the state of the cart
   /* add your cart state code here */
  
   return (
       <div clasname='APP'>
-        {/* <ChakraProvider> */}
-        <Navbar/>
+        <ChakraProvider theme={theme}>
+        <Nav/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="Projects" element={<Projects/>}/>
         </Routes>
-        {/* </ChakraProvider> */}
+        </ChakraProvider>
     </div>
   );
 }

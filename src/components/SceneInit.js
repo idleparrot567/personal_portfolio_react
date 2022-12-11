@@ -28,7 +28,7 @@ export default class SceneInit {
 
   initialize() {
     this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color(0x102E4A);
+    // this.scene.background = new THREE.Color(0xffffff);
     this.camera = new THREE.PerspectiveCamera(
       this.fov,
       window.innerWidth / window.innerHeight,
@@ -43,9 +43,11 @@ export default class SceneInit {
       canvas, antialias: true,
     });
     //build the container here
-    const container = document.getElementById('goHere');
+    const container = document.getElementById('test');
     this.renderer.setPixelRatio( window.devicePixelRatio);
+    console.log("container.weith", container.clientWidth)
     this.renderer.setSize(container.clientWidth, container.clientHeight);
+    this.renderer.setClearColor( 0xffffff, 0);
     this.renderer.outputEncoding = THREE.sRGBEncoding;
 
 
@@ -61,7 +63,7 @@ export default class SceneInit {
 		this.controls.enableDamping = true;
 
     this.stats = Stats();
-    //container.appendChild(this.stats.dom);
+    container.appendChild(this.stats.dom);
 
     // if window resizes
     window.addEventListener('resize', () => this.onWindowResize(), false);
@@ -90,6 +92,6 @@ export default class SceneInit {
     //this.camera.aspect = window.innerWidth / window.innerHeight;
     //this.camera.aspect = this.canvas.clientWidth / this.canvas.clientHeight;
     this.camera.updateProjectionMatrix();
-    this.renderer.setSize(800, 800);
+    this.renderer.setSize(test.clientWidth , test.clientHeight);
   }
 }

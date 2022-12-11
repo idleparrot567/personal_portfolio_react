@@ -65,7 +65,7 @@ export default function About() {
 
            {/* here starts the Bio section */}
            <Section delay={0.3}>
-             <Heading as="h3" variant="setcion-title" color="white"> 
+             <Heading as="h3" variant="underline" color="white"> 
              Bio
              </Heading>
              <BioSection>

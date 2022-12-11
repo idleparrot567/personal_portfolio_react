@@ -1,6 +1,5 @@
 body {
-    background-color: #102E4A;
-    margin: 0;
+    background-color: "#102E4A" !important;;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
@@ -15,8 +14,8 @@ body {
   }
 
   #gohere{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     margin: 1em;
     padding: 1em;
     position: static; /* fixed or static */
@@ -29,7 +28,7 @@ body {
     width: 800px; /*400px*/
     height: 600px; /*500px*/
     position: static; /* fixed or static */
-    justify-items: center;
+    justify-content: center;
     top: 100px;
     left: 100px;
 }

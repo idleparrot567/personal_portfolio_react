@@ -1,20 +1,21 @@
 import React from 'react';
 import Main from "./Main"
-import Container from '@mui/material/Container'
+import {Container} from '@chakra-ui/react'
+// import Container from '@mui/material/Container'
 import Model from "./Model"
 
 const Home = () => {
     return (
       <div>
      <div id="model">
-      <Container maxWidth="md">
+      <Container maxWidth="sm" centerContent>
       <div id='goHere'>
         <Model></Model>
       </div>  
       </Container>
       </div>
        <div>
-       <Container maxWidth="sm">
+       <Container maxWidth="container.sm" centerContent>
        <Main></Main> 
          </Container> 
      </div>
